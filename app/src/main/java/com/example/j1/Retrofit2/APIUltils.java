@@ -6,5 +6,5 @@ public class APIUltils {
         return RetrofitClient.getClient(Base_Url).create(DataClient.class);
     }
 }
-//"http://10.3.18.212/usermanagement/" kunigunda LAN
+//"http://10.3.18.212/usermanagement/" kunigunda 
 //"http://192.168.0.235/usermanagement/"; own flat wifi
