@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/editedbydiepn"
+    tools:context=".regActivity2">
+    <TextView
+        android:id="@+id/textviewreghere"
+        android:text="REGISTER HERE"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:fontFamily="@font/lemontea"
+        android:textColor="#ff6666"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imageviewreg"
+        android:layout_below="@+id/textviewreghere"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/homedn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+    <EditText
+        android:id="@+id/edittextreguser"
+        android:layout_below="@+id/imageviewreg"
+        android:hint="Please enter your username"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edittextregpass"
+        android:layout_below="@+id/edittextreguser"
+        android:hint="Please enter your password"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttoncancel"
+        android:layout_below="@+id/edittextregpass"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:text="CANCEL"
+        android:onClick="cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonconfirm"
+        android:layout_below="@+id/edittextregpass"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:text="CONFIRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

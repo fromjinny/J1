@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/editedbydiepn"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textviewtitle"
+        android:text="LOGIN HERE"
+        android:fontFamily="@font/lemontea"
+        android:textSize="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0000FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edittextusername"
+        android:hint="Enter your username"
+        android:layout_below="@+id/textviewtitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edittextpassword"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/edittextusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonlogin"
+        android:text="LOGIN"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#FF00A2"
+        android:layout_below="@+id/edittextpassword"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/buttonregister"
+        android:text="REGISTER"
+        android:layout_below="@+id/buttonlogin"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#FF00A2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textnoaccount"
+        android:text="Don't have an account yet? Register now"
+        android:layout_below="@+id/buttonlogin"
+        android:textStyle="italic"
+        android:fontFamily="@font/sweetribon"
+        android:textSize="30dp"
+        android:textColor="#202020"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
